@@ -69,11 +69,16 @@ const long RFC2445_DURATION_FIELD_UNITS[RFC2445_DURATION_FIELD_UNITS_LEN] = {
     _location = location;
     _organizer = organizer;
     _attendees = attendees;
-    _description = description;
+    _description_ = description;
     _latitude = latitude;
     _longitude = longitude;
   }
   return self;
+}
+
+- (NSString *)description
+{
+    return _description_;
 }
 
 + (id)calendarParsedResultWithSummary:(NSString *)summary startString:(NSString *)startString
