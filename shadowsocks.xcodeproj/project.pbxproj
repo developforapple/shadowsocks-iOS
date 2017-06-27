@@ -1533,11 +1533,12 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/OpenSSL-for-iPhone/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = shadowsocks;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1573,7 +1574,7 @@
 				PRODUCT_NAME = shadowsocks;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1603,7 +1604,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = shadowsocks;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -1631,7 +1632,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = shadowsocks;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
