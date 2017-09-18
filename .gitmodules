@@ -16,6 +16,3 @@
 [submodule "AFNetworking"]
 	path = AFNetworking
 	url = git@github.com:AFNetworking/AFNetworking.git
-[submodule "substitute"]
-	path = substitute
-	url = git@github.com:comex/substitute.git
