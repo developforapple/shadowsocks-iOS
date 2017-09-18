@@ -64,7 +64,6 @@
 		627A6E0C18B47E9300493BBC /* SWBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A6E0B18B47E9300493BBC /* SWBAppDelegate.m */; };
 		627A6E1118B47E9300493BBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627A6E1018B47E9300493BBC /* Images.xcassets */; };
 		627A6E3F18B47F5400493BBC /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 627A6E3E18B47F5400493BBC /* libcrypto.dylib */; };
-		628693E116DA2578008B1A26 /* AppProxyCap.m in Sources */ = {isa = PBXBuildFile; fileRef = 628693E016DA2578008B1A26 /* AppProxyCap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		628693EC16DA2706008B1A26 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628693EA16DA26E2008B1A26 /* SystemConfiguration.framework */; };
 		628693F816DA2817008B1A26 /* ProxySettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */; };
 		628C3DDF18AD5AFA0090632A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628C3DE118AD5AFA0090632A /* Localizable.strings */; };
@@ -124,6 +123,7 @@
 		62E2E1991A5AB21E00C9A2E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E2E1981A5AB21E00C9A2E1 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		62E2E19B1A5AB23700C9A2E1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E2E19A1A5AB23700C9A2E1 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		62E2E19D1A5ABE5C00C9A2E1 /* abp.js in Resources */ = {isa = PBXBuildFile; fileRef = 62E2E19C1A5ABE5C00C9A2E1 /* abp.js */; };
+		69811D6D1F6FC15000DD618F /* AppProxyCap.m in Sources */ = {isa = PBXBuildFile; fileRef = 69811D6C1F6FC15000DD618F /* AppProxyCap.m */; };
 		96D80C05176CE1D7006C8078 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D80C04176CE1D7006C8078 /* AVFoundation.framework */; };
 		EB18906527B59E4F6A70A14A /* ShadowsocksRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1897A89055A4C2CFD81AF8 /* ShadowsocksRunner.m */; };
 		EB189096BC8B91FA0F60A34C /* 3gnet_disable.mobileconfig in Resources */ = {isa = PBXBuildFile; fileRef = EB1897AD03717EB5E44BA24B /* 3gnet_disable.mobileconfig */; };
@@ -242,8 +242,6 @@
 		627A6E3C18B47F4700493BBC /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libssl.dylib; sourceTree = DEVELOPER_DIR; };
 		627A6E3E18B47F5400493BBC /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libcrypto.dylib; sourceTree = DEVELOPER_DIR; };
 		627A6E5618B4887000493BBC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		628693DF16DA2578008B1A26 /* AppProxyCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppProxyCap.h; path = AppProxyCap/lib/AppProxyCap.h; sourceTree = SOURCE_ROOT; };
-		628693E016DA2578008B1A26 /* AppProxyCap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppProxyCap.m; path = AppProxyCap/lib/AppProxyCap.m; sourceTree = SOURCE_ROOT; };
 		628693EA16DA26E2008B1A26 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		628693F316DA2817008B1A26 /* ProxySettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxySettingsTableViewController.h; sourceTree = "<group>"; };
 		628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxySettingsTableViewController.m; sourceTree = "<group>"; };
@@ -355,6 +353,8 @@
 		62E2E1981A5AB21E00C9A2E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		62E2E19A1A5AB23700C9A2E1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		62E2E19C1A5ABE5C00C9A2E1 /* abp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = abp.js; sourceTree = "<group>"; };
+		69811D6B1F6FC15000DD618F /* AppProxyCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppProxyCap.h; sourceTree = "<group>"; };
+		69811D6C1F6FC15000DD618F /* AppProxyCap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppProxyCap.m; sourceTree = "<group>"; };
 		96D80C04176CE1D7006C8078 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EB189069EF341E65B5414D00 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		EB189071407B3A2A9B4C83CB /* ProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileManager.h; sourceTree = "<group>"; };
@@ -507,12 +507,12 @@
 		621571AE16CF6BCB003D96B4 /* ShadowWeb */ = {
 			isa = PBXGroup;
 			children = (
+				69811D6A1F6FC15000DD618F /* AppProxyCap */,
 				62E27E5618C1D0C00086033D /* gzip */,
 				626C4AD818B1E338003DBE33 /* base64 */,
 				62D85969176DA63C00FE5575 /* polipo */,
 				621FCBF817603FD600411E5F /* GCDWebServer */,
 				628693FA16DA2823008B1A26 /* Shadowsocks */,
-				628693DE16DA2564008B1A26 /* AppProxyCap */,
 				621571EC16CF7810003D96B4 /* Others */,
 				621571E216CF74BC003D96B4 /* WebView */,
 				621571CF16CF6D1F003D96B4 /* ToolBar */,
@@ -704,15 +704,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		628693DE16DA2564008B1A26 /* AppProxyCap */ = {
-			isa = PBXGroup;
-			children = (
-				628693DF16DA2578008B1A26 /* AppProxyCap.h */,
-				628693E016DA2578008B1A26 /* AppProxyCap.m */,
-			);
-			name = AppProxyCap;
-			sourceTree = "<group>";
-		};
 		628693FA16DA2823008B1A26 /* Shadowsocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -841,6 +832,15 @@
 			);
 			name = AFNetworking;
 			path = AFNetworking/AFNetworking;
+			sourceTree = SOURCE_ROOT;
+		};
+		69811D6A1F6FC15000DD618F /* AppProxyCap */ = {
+			isa = PBXGroup;
+			children = (
+				69811D6B1F6FC15000DD618F /* AppProxyCap.h */,
+				69811D6C1F6FC15000DD618F /* AppProxyCap.m */,
+			);
+			path = AppProxyCap;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -1027,7 +1027,6 @@
 				621571EF16CF782C003D96B4 /* SWBNetworkActivityIndicatorManager.m in Sources */,
 				621571F616CF7FA7003D96B4 /* SWBPage.m in Sources */,
 				621571F716CF7FA7003D96B4 /* SWBPageManager.m in Sources */,
-				628693E116DA2578008B1A26 /* AppProxyCap.m in Sources */,
 				628693F816DA2817008B1A26 /* ProxySettingsTableViewController.m in Sources */,
 				621FCC0217603FFA00411E5F /* GCDWebServer.m in Sources */,
 				621FCC0317603FFA00411E5F /* GCDWebServerConnection.m in Sources */,
@@ -1041,6 +1040,7 @@
 				62D85A92176DA6FC00FE5575 /* config.c in Sources */,
 				62D85A95176DA6FC00FE5575 /* diskcache.c in Sources */,
 				62D85A96176DA6FC00FE5575 /* dns.c in Sources */,
+				69811D6D1F6FC15000DD618F /* AppProxyCap.m in Sources */,
 				62D85A97176DA6FC00FE5575 /* event.c in Sources */,
 				62D85A98176DA6FC00FE5575 /* forbidden.c in Sources */,
 				62D85A9A176DA6FC00FE5575 /* fts_compat.c in Sources */,
