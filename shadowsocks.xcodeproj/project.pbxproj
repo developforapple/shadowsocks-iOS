@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D595B871F02335400C4E72A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D595B861F02335400C4E72A /* libz.tbd */; };
-		2D595B891F0233B900C4E72A /* liblibsscore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D595A841F022CBE00C4E72A /* liblibsscore.a */; };
 		6205309618D4443E00887D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571AA16CF6BCB003D96B4 /* Foundation.framework */; };
 		6205309918D4443E00887D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205309818D4443E00887D3E /* main.m */; };
 		620530A518D4444E00887D3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629AC93F18B49C33001D2771 /* SystemConfiguration.framework */; };
@@ -66,7 +65,6 @@
 		627A6E1118B47E9300493BBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627A6E1018B47E9300493BBC /* Images.xcassets */; };
 		627A6E3F18B47F5400493BBC /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 627A6E3E18B47F5400493BBC /* libcrypto.dylib */; };
 		628693E116DA2578008B1A26 /* AppProxyCap.m in Sources */ = {isa = PBXBuildFile; fileRef = 628693E016DA2578008B1A26 /* AppProxyCap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		628693E716DA2584008B1A26 /* interpose.c in Sources */ = {isa = PBXBuildFile; fileRef = 628693E416DA2584008B1A26 /* interpose.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		628693EC16DA2706008B1A26 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628693EA16DA26E2008B1A26 /* SystemConfiguration.framework */; };
 		628693F816DA2817008B1A26 /* ProxySettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */; };
 		628C3DDF18AD5AFA0090632A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628C3DE118AD5AFA0090632A /* Localizable.strings */; };
@@ -142,13 +140,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D595A831F022CBE00C4E72A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2D595A7F1F022CBD00C4E72A /* libsscore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2D595A731F022CBD00C4E72A;
-			remoteInfo = libsscore;
-		};
 		620530BB18D44A4000887D3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6215719D16CF6BCA003D96B4 /* Project object */;
@@ -159,7 +150,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D595A7F1F022CBD00C4E72A /* libsscore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libsscore.xcodeproj; path = libsscore/libsscore.xcodeproj; sourceTree = "<group>"; };
 		2D595B861F02335400C4E72A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6205309518D4443E00887D3E /* shadowsocks_sysconf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shadowsocks_sysconf; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205309818D4443E00887D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -254,8 +244,6 @@
 		627A6E5618B4887000493BBC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		628693DF16DA2578008B1A26 /* AppProxyCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppProxyCap.h; path = AppProxyCap/lib/AppProxyCap.h; sourceTree = SOURCE_ROOT; };
 		628693E016DA2578008B1A26 /* AppProxyCap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppProxyCap.m; path = AppProxyCap/lib/AppProxyCap.m; sourceTree = SOURCE_ROOT; };
-		628693E416DA2584008B1A26 /* interpose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = interpose.c; path = AppProxyCap/lib/inject_and_interpose/interpose.c; sourceTree = SOURCE_ROOT; };
-		628693E516DA2584008B1A26 /* interpose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interpose.h; path = AppProxyCap/lib/inject_and_interpose/interpose.h; sourceTree = SOURCE_ROOT; };
 		628693EA16DA26E2008B1A26 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		628693F316DA2817008B1A26 /* ProxySettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxySettingsTableViewController.h; sourceTree = "<group>"; };
 		628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxySettingsTableViewController.m; sourceTree = "<group>"; };
@@ -405,7 +393,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D595B891F0233B900C4E72A /* liblibsscore.a in Frameworks */,
 				2D595B871F02335400C4E72A /* libz.tbd in Frameworks */,
 				6274847418B1FD7900A9CDF0 /* ImageIO.framework in Frameworks */,
 				6274847218B1FD6F00A9CDF0 /* QuartzCore.framework in Frameworks */,
@@ -439,14 +426,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D595A801F022CBD00C4E72A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2D595A841F022CBE00C4E72A /* liblibsscore.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		6205309718D4443E00887D3E /* shadowsocks_sysconf */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,7 +446,6 @@
 		6215719C16CF6BCA003D96B4 = {
 			isa = PBXGroup;
 			children = (
-				2D595A7F1F022CBD00C4E72A /* libsscore.xcodeproj */,
 				621571AE16CF6BCB003D96B4 /* ShadowWeb */,
 				627A6DFE18B47E9300493BBC /* ShadowsocksX */,
 				627A6E1C18B47E9300493BBC /* ShadowsocksXTests */,
@@ -731,8 +709,6 @@
 			children = (
 				628693DF16DA2578008B1A26 /* AppProxyCap.h */,
 				628693E016DA2578008B1A26 /* AppProxyCap.m */,
-				628693E416DA2584008B1A26 /* interpose.c */,
-				628693E516DA2584008B1A26 /* interpose.h */,
 			);
 			name = AppProxyCap;
 			sourceTree = "<group>";
@@ -950,12 +926,6 @@
 			mainGroup = 6215719C16CF6BCA003D96B4;
 			productRefGroup = 621571A616CF6BCB003D96B4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 2D595A801F022CBD00C4E72A /* Products */;
-					ProjectRef = 2D595A7F1F022CBD00C4E72A /* libsscore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				621571A416CF6BCB003D96B4 /* shadowsocks */,
@@ -964,16 +934,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2D595A841F022CBE00C4E72A /* liblibsscore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = liblibsscore.a;
-			remoteRef = 2D595A831F022CBE00C4E72A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		621571A316CF6BCB003D96B4 /* Resources */ = {
@@ -1068,7 +1028,6 @@
 				621571F616CF7FA7003D96B4 /* SWBPage.m in Sources */,
 				621571F716CF7FA7003D96B4 /* SWBPageManager.m in Sources */,
 				628693E116DA2578008B1A26 /* AppProxyCap.m in Sources */,
-				628693E716DA2584008B1A26 /* interpose.c in Sources */,
 				628693F816DA2817008B1A26 /* ProxySettingsTableViewController.m in Sources */,
 				621FCC0217603FFA00411E5F /* GCDWebServer.m in Sources */,
 				621FCC0317603FFA00411E5F /* GCDWebServerConnection.m in Sources */,
